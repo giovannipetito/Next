@@ -1,0 +1,351 @@
+<resources>
+
+    <string name="app_name">Next</string>
+
+    <string name="blank"></string>
+    <string name="tbd">TBD</string>
+
+    <!-- Generic-->
+    <string name="close_button_dialog">Chiudi</string>
+    <string name="confirm_button_dialog">Conferma</string>
+    <string name="cancel_button_dialog">Annulla</string>
+    <string name="two_values_string">%1$s\n%2$s</string>
+
+    <!-- Navigation Bar-->
+    <string name="home_nav_label">Home</string>
+    <string name="line_nav_label">Offerta</string>
+    <string name="profile_nav_label">Profilo</string>
+    <string name="support_nav_label">Supporto</string>
+
+    <!-- Dashboard -->
+    <string name="recharge_button_text">Ricarica</string>
+    <string name="residual_credit_label">Credito residuo</string>
+    <string name="residual_renew_day_label">Prossimo rinnovo</string>
+    <string name="voice_and_sms">SMS e chiamate &lt;b&gt;senza limiti&lt;/b&gt;</string>
+    <string name="actual_giga">&lt;b&gt;%1$s giga &lt;/b&gt;</string>
+    <string name="national_giga"> su %1$s</string>
+    <string name="national_giga_extended"> su %1$s in Italia</string>
+    <string name="europe_giga"> su %1$s in Europa</string>
+    <string name="residual_credit">%1$s €</string>
+    <plurals name="renewal_days">
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <string name="tab_national">Italia</string>
+    <string name="tab_europe">Europa</string>
+    <string name="restart_label">Riparti</string>
+
+    <!-- UserInfo-->
+    <string name="user_info_section_title">Profilo</string>
+    <string name="go_to_username_button">Cambia username</string>
+    <string name="go_to_consents">Consensi e condizioni</string>
+    <string name="go_to_password_button">Cambia password</string>
+    <string name="cf_label">Il tuo Codice Fiscale</string>
+    <string name="address_label">Il tuo indirizzo</string>
+    <string name="contacts_label">I tuoi contatti</string>
+    <string name="logout_button">Esci dall\'app</string>
+    <string name="city_string_format">%1$s %2$s (%3$s)</string>
+
+    <!-- SimPuk-->
+    <string name="sim_puk_section_title">Info SIM</string>
+    <string name="your_line_label">La tua linea</string>
+    <string name="sim_status_label">Stato SIM</string>
+    <string name="sim_deadline_label">Scadenza SIM</string>
+    <string name="offer_renewal_label">Rinnovo offerta</string>
+
+    <!-- Email management -->
+    <string name="email_section_title">Gestisci email</string>
+    <string name="current_email_label">Indirizzo e-mail registrato</string>
+    <string name="new_email_hint">Inserisci nuovo indirizzo e-mail</string>
+    <string name="confirm_new_email_hint">Conferma nuovo indirizzo e-mail registrato</string>
+    <string name="send_new_email_button_label">Salva indirizzo email</string>
+
+    <!-- Password management -->
+    <string name="password_section_title">Password</string>
+    <string name="current_password_label">Inserisci la tua password attuale</string>
+    <string name="constraint_new_password_label">Deve essere composta da almeno otto caratteri, un numero</string>
+    <string name="new_password_hint">Inserisci nuova password</string>
+    <string name="confirm_new_password_hint">Conferma nuova password</string>
+    <string name="send_new_password_button_label">Salva password</string>
+    <string name="empty_current_password_error">Devi inserire la tua password attuale</string>
+    <string name="empty_new_password_error">Devi inserire una nuova password</string>
+    <string name="empty_confirm_password_error">Devi confermare la password scelta</string>
+    <string name="passwords_not_match_error">Le due password sono diverse</string>
+    <string name="new_password_criteria_mismatch">La password scelta non corrisponde ai criteri</string>
+
+    <!-- Consents fragment -->
+    <string name="consent_section_title">Consensi e condizioni</string>
+
+    <string name="consent_commercial_offers_title">Comunicazione offerte e promozioni</string>
+    <string name="consent_commercial_offers_text">Desidero ricevere promozioni e offerte relative ai servizi DEA</string>
+    <string name="consent_commercial_partners_offers_text">Desidero ricevere promozioni e offerte da DEA relative anche a prodotti e servizi dei suoi partner commerciali</string>
+
+    <string name="consent_profiling_title">Offerte personalizzate</string>
+    <string name="consent_profiling_text">Desidero ricevere offerte e promozioni in linea con le mie preferenze ed abitudini di consumo</string>
+
+    <string name="consent_location_title">Offerte personalizzate sulla base dei dati di geolocalizzazione</string>
+    <string name="consent_location_text">Autorizzo DEA a trattare i miei dati di localizzazione per offerte e promozioni commerciali</string>
+
+    <string name="consent_enrichment_title">Arricchimento dei dati</string>
+    <string name="consent_enrichment_text">Autorizzo DEA ad arrichire i miei dati con quelli raccolti da aziende esterne per una migliore personalizzazione dell\'offerta e dei servizi</string>
+
+    <string name="consent_data_transfer_title">Trasferimento dati</string>
+    <string name="consent_data_transfer_text">Autorizzo a comunicare i miei dati ad aziende selezionate da DEA per finalità commerciali</string>
+
+    <string name="consent_updated_successfully">La variazione dei consensi si è conclusa con successo.</string>
+
+    <string name="consent_commercial_deletion">Se scegli di non fornire il consenso non potrai essere informato delle offerte che Wind ti riserva</string>
+    <string name="consent_partners_deletion">Se scegli di non fornire il consenso non potrai ricevere offerte che i partner di Wind Tre ti riservano</string>
+    <string name="consent_profiling_deletion">Se scegli di non dare il consenso non potrai ricevere offerte e promozioni in linea con le tue specifiche esigenze</string>
+    <string name="consent_location_deletion">Se scegli di non dare il consenso non potrai ricevere offerte e promozioni disponibili nel luogo in cui ti trovi</string>
+    <string name="consent_enrichment_deletion">Se scegli di non dare il consenso non potrai ricevere offerte e promozioni in linea con i tuoi interessi e le tue abitudini di consumo</string>
+    <string name="consent_data_transfer_deletion">Se scegli di non dare il consenso non potrai ricevere dalle aziende selezionate da Wind Tre le loro migliori proposte commerciali</string>
+
+    <!-- Detail Fragment-->
+    <string name="detail_section_title">Dettagli offerta</string>
+    <string name="detail_total_label">Dati totali</string>
+    <string name="detail_minutes_sms_value">Illimitati</string>
+    <string name="detail_minutes_sms_label">Minuti e SMS</string>
+    <string name="detail_roaming_label">Dati in Europa</string>
+    <string name="detail_renewal_label">Prossimo rinnovo &lt;b&gt;%1$s&lt;/b&gt;</string>
+    <string name="go_to_credit">Addebiti e accrediti</string>
+    <string name="go_to_traffic">Dettaglio traffico</string>
+    <string name="go_to_abroad">Estero</string>
+    <string name="go_to_block">Blocco chiamate e dati</string>
+    <string name="go_to_sim_puk">Info SIM e PUK</string>
+    <string name="detail_popup">Info</string>
+    <string name="details_total_giga">%1$s giga</string>
+
+    <!-- Support Fragment-->
+    <string name="support_section_title">Supporto</string>
+    <string name="support_list_faq_button">Assistenza e FAQ</string>
+    <string name="support_internet_settings_button">Configura internet</string>
+    <string name="support_find_shop_button">Trova negozio</string>
+    <string name="support_chat_button">Archivio chat</string>
+    <string name="support_new_sim_button">Attiva Nuova SIM</string>
+
+    <!-- FAQ List Fragment-->
+    <string name="list_faq_section_title">Assistenza e FAQ</string>
+
+    <!-- FAQ Detail Fragment-->
+    <string name="detail_faq_section_title">Dettaglio FAQ</string>
+
+    <!-- Credit Fragment-->
+    <string name="credit_section_title">Addebiti e accrediti</string>
+    <string name="credit_traffic_button">Vedi il riepilogo del tuo traffico</string>
+    <string name="credit_static_label">Ricarica</string>
+
+    <!-- TopUp -->
+    <!-- Home TopUp -->
+    <string name="home_top_up_section_title">Ricarica</string>
+    <string name="home_top_up_continue_button">Ricarica %1$s %2$s</string>
+    <string name="home_top_up_continue_button_end">euro</string>
+    <string name="home_top_up_autotopup_inactive">Attiva l\'autoricarica</string>
+    <string name="home_top_up_autotopup_active">Gestisci l\'autoricarica</string>
+    <!-- TopUp Payment Methods -->
+    <string name="payment_methods_top_up_section_title">Metodo di pagamento</string>
+    <string name="payment_methods_top_up_continue_button">Avanti</string>
+    <string name="payment_methods_cc">Carta di credito</string>
+    <string name="payment_methods_paypal">PayPal</string>
+    <string name="payment_methods_no_method_choosed">Devi selezionare un metodo di pagamento</string>
+    <string name="payment_methods_no_valid_amount">L\'importo selezionato non può essere ricaricato</string>
+
+    <!-- TOPUP Dialog-->
+    <string name="topup_dialog_section_title">Ricarica</string>
+    <string name="topup_dialog_section_text">Stai per ricaricare %1$s euro sul numero %2$s.</string>
+    <string name="topup_dialog_section_terms">Termini e condizioni</string>
+    <string name="topup_dialog_button_topup">Ricarica ora</string>
+    <string name="topup_dialog_button_new_method">Nuovo metodo di pagamento</string>
+    <string name="topup_dialog_payment_method_change">Cambia</string>
+    <string name="topup_dialog_payment_method_name">&#8226;&#8226;&#8226;&#8226; %1$s</string>
+    <string name="topup_dialog_payment_method_paypal_name">Conto PayPal</string>
+    <string name="topup_dialog_payment_method_new_payment">Nuovo metodo di pagamento</string>
+    <string name="topup_dialog_payment_method_subtext">Usa il tuo metodo di pagamento preferito</string>
+    <string name="topup_dialog_payment_method_change_subtext">Scegli un nuovo metodo di pagamento</string>
+
+    <!-- AUTOTOPUP Dialog-->
+    <string name="autotopup_dialog_section_title">Autoricarica</string>
+    <string name="autotopup_dialog_section_text">Ogni mese il tuo credito sarà ricaricato comodamente in automatico dell\'importo esatto della tua offerta.</string>
+    <string name="autotopup_dialog_section_terms">Termini e condizioni</string>
+    <string name="autotopup_dialog_button_autotopup">Attiva</string>
+    <string name="autotopup_dialog_button_new_method">Nuovo metodo di pagamento</string>
+
+    <!-- Credit Card Payment-->
+    <string name="cc_section_title">Inserisci i dati della carta</string>
+    <string name="cc_name_hint">Nome titolare</string>
+    <string name="cc_surname_hint">Cognome titolare</string>
+    <string name="cc_number_hint">Numero carta</string>
+    <string name="cc_cvv_hint">CVV</string>
+    <string name="cc_date_hint">Data di scadenza</string>
+    <string name="cc_terms_text">Ho letto e accettato i Termini e Condizioni</string>
+    <string name="cc_terms_text_part_1">Ho letto e accetto i </string>
+    <string name="cc_terms_text_part_2"><u>Termini e Condizioni</u></string>
+
+    <!-- Save Payment Method Dialog-->
+    <string name="save_payment_section_title">Metodo di pagamento</string>
+    <string name="save_payment_section_text">Vuoi salvare il tuo metodo di pagamento per le prossime ricariche?</string>
+    <string name="save_payment_not_save_button">Non salvare</string>
+    <string name="save_payment_save_button">Salva metodo di pagamento</string>
+
+    <!-- Sender Request-->
+    <string name="sender_topup_section_title">Solo un momento.</string>
+    <string name="sender_topup_section_text">Stiamo prendendo in carico l\'operazione&#8230;</string>
+
+    <!-- Topup Error-->
+    <string name="topup_error_generic_title">C\'è stato un intoppo nei nostri sistemi, ma niente paura!</string>
+    <string name="topup_error_generic_message">Attendi un momento e poi riprova a fare la ricarica.</string>
+    <string name="topup_error_close_button">Chiudi</string>
+
+    <!-- errors -->
+    <string name="generic_error">Si è verificato un errore di connessione. Riprova più tardi</string>
+    <string name="generic_server_error">Errore nell\'elaborazione della richiesta. Ti invitiamo a riprovare.</string>
+
+    <string name="block_01">Blocca le chiamate dell\'Italia verso l\'estero, e le chiamate in uscita quando sei all\'estero</string>
+    <string name="block_02">Blocca le chiamate verso il numeri premium 199, 144 e 899</string>
+    <string name="block_03">Blocca la navigazione all\'estero se la spesa per la navigazione extra roaming supera i 50 euro</string>
+
+    <string name="consume_voice">&lt;b&gt;%1$s Chiamate&lt;/b&gt;(%2$s)</string>
+
+    <string name="consume_sms">&lt;b&gt;%1$s Messaggi&lt;/b&gt;</string>
+
+    <string name="consume_internet">&lt;b&gt;Internet &lt;/b&gt;(%1$s)</string>
+
+    <string name="traffic_data_total">giga disponibili\ndi %1$s totali</string>
+
+    <string name="restart_button_text">Rinnova ora</string>
+
+    <string name="msg_dashboard_ok">Incredibile ma sì:\ni tuoi giga sono tanti</string>
+    <string name="msg_dashboard_alert">I tuoi giga sono pochi,\nstanno finendo</string>
+    <string name="msg_dashboard_warning">Continua a navigare\ncon i tuoi giga</string>
+
+    <string name="hint_edit_line"><font size="14">Ricarica un altro numero</font></string>
+
+    <!-- top up pending -->
+    <string name="topup_pending_top_label">Stiamo procedendo con la ricarica\ndi %1$s euro sul numero %2$s</string>
+    <string name="topup_pending_bottom_title">Scopri Autoricarica</string>
+    <string name="topup_pending_bottom_subtitle">Ogni mese, ricarichi comodamente in\nautomatico l\'importo della tua offerta</string>
+    <string name="topup_activate_auto_topup">Attiva Autoricarica</string>
+
+    <string name="topup_auto_confirmation_title_label">Hai attivato con successo la Ricarica Smart di %1$s euro</string>
+    <string name="topup_auto_confirmation_description_label">Ogni mese il tuo credito sarà ricaricato comodamente in automatico dell\' importo esatto della tua offerta.</string>
+
+    <string name="error_number_1">Numero non valido</string>
+    <string name="error_year_1">Anno non valido</string>
+    <string name="error_month_1">Data scadenza non valida</string>
+    <string name="error_name_1">Nome non valido</string>
+    <string name="error_surname_1">Cognome non valido</string>
+    <string name="error_cvv_1">CVV non valido</string>
+    <string name="error_generic">Campo non valido</string>
+
+    <string name="insert_msisdn_title">Inserisci il tuo numero</string>
+    <string name="insert_msisdn_message">Per iniziare e verificare la tua linea, inserisci il tuo numero di telefono Dea:</string>
+
+    <string name="lbl_continue">Continua</string>
+
+    <string name="error_msisdn_start_with_3">Il numero di telefono deve iniziare con 3</string>
+
+    <string name="error_name_2">Il nome deve essere almeno 2 caratteri</string>
+    <string name="error_surname_2">Il cognome deve essere almeno 2 caratteri</string>
+
+    <string name="login_welcome_cta_1">Attiva SIM</string>
+    <string name="login_welcome_cta_2">Entra</string>
+
+    <!-- Login -->
+    <string name="app_version">Versione %1$s - %2$s</string>
+    <string name="login_section_title">Benvenuto in MyDea</string>
+    <string name="login_username_hint">Il tuo indirizzo email</string>
+    <string name="login_password_hint">La tua password</string>
+    <string name="login_msisdn_hint">Numero di telefono</string>
+    <string name="login_email_hint">La tua email</string>
+    <string name="login_save_credentials_text">Ricordami</string>
+    <string name="login_button_text">Accedi</string>
+    <string name="login_forgot_credentials_text">Hai dimenticato i tuoi dati di accesso?</string>
+    <string name="login_not_registered_text">Non hai registrato la tua email?</string>
+    <string name="login_not_registered_button">Registrati ora</string>
+    <string name="login_std_continue">Continua</string>
+    <string name="login_insert_your_email_title">Inserisci il tuo indirizzo email</string>
+    <string name="login_insert_your_email_descr">Inserisci l\'indirizzo email con cui vuoi registrarti su Dea</string>
+    <string name="login_insert_your_puk_title">Inserisci il codice PUK</string>
+    <string name="login_insert_your_puk_descr">Inserisci il codice PUK della tua SIM.\nIl codice da inserire deve essere di 8 cifre.</string>
+    <string name="login_puk_hint">Inserisci il codice PUK</string>
+    <string name="login_empty_password">La password non può essere vuota</string>
+
+    <string name="where_is_puk_title">Dov\'è il mio codice PUK?</string>
+    <string name="where_is_puk_message">Sul supporto in plastica dove è riportato anche il codice PIN della SIM.</string>
+    <string name="where_is_puk_action">Ok</string>
+
+    <string name="login_error_title">Dati di accesso errati o inesistenti</string>
+    <string name="login_error_message">Controlla di aver inserito i dati correttamente, oppure registra la tua mail e la tua password.</string>
+    <string name="login_error_button">Chiudi</string>
+
+    <!-- Login Mail not verified -->
+    <string name="mail_not_verified_section_title">Verifica la tua email</string>
+    <string name="mail_not_verified_section_text">Ti abbiamo inviato una email di conferma all\'indirizzo:</string>
+    <string name="mail_not_verified_wrong_email">Email sbagliata?</string>
+    <string name="mail_not_verified_wrong_repeat"><u>Ripeti la registrazione</u></string>
+    <string name="mail_not_verified_verify">Apri la mail e clicca su <b>Verifica la mia email.</b></string>
+    <string name="mail_not_verified_verify_subtext">Non l\'hai ricevuta?</string>
+    <string name="mail_not_verified_verify_subtext_send"><u>Invia nuova email</u></string>
+    <string name="mail_not_verified_close">Chiudi</string>
+    <string name="mail_not_verified_send_confirm">Mail inviata correttamente</string>
+
+    <!-- Recovery Credentials -->
+    <string name="recovery_credentials_section_title">Recupera le tue credenziali</string>
+    <string name="recovery_credentials_section_message">Non ricordi più la tua mail di accesso o la tua password? Ti aiutiamo!</string>
+    <string name="recovery_credentials_email_button">Recupera la tua email di accesso</string>
+    <string name="recovery_credentials_password_button">Recupera la tua password</string>
+
+    <!-- Recovery Password -->
+    <string name="recovery_password_section_title">Inserisci la tua mail</string>
+    <string name="recovery_password_section_message">Inserisci l\'indirizzo email con cui ti sei registrato. Ti invieremo un messaggio per aiutarti a reimpostare la tua password.</string>
+    <string name="recovery_password_button">Invia messaggio di reset</string>
+    <string name="recovery_password_failed">Si è verificato un errore</string>
+
+    <!-- Recovery Password -->
+    <string name="recovery_username_section_title">Inserisci il numero DEA</string>
+    <string name="recovery_username_section_message">Inserisci il numero DEA del quale vuoi recuperare la tua email.</string>
+    <string name="recovery_username_button">Richiedi il codice</string>
+    <string name="recovery_username_failed">Si è verificato un errore</string>
+
+    <!-- Recovery Password Confirm-->
+    <string name="recovery_password_confirm_section_title">Controlla la tua email</string>
+    <string name="recovery_password_confirm_section_message">Ti abbiamo inviato una email per resettare la tua password all\'indirizzo</string>
+    <string name="recovery_password_confirm_not_received">Non l\'hai ricevuta?</string>
+    <string name="recovery_password_confirm_not_received_send">&lt;u&gt;Invia nuova email&lt;/u&gt;</string>
+    <string name="recovery_password_confirm_success"><u>Ti abbiamo inviato una email per resettare la tua password</u></string>
+
+    <string name="insert_otp_title">Verifica il codice</string>
+    <string name="insert_otp_message">Inserire il codice di 6 cife che ti abbiamo inviato via SMS.</string>
+    <string name="insert_otp_message_1">Se non puoi ricevere SMS.</string>
+    <string name="insert_otp_message_2">clicca qui</string>
+
+    <string name="insert_resend_message_1">Non hai ricevuto il codice?</string>
+    <string name="insert_resend_message_2">Invialo di nuovo</string>
+    <string name="lbl_verifica">Verifica Identità</string>
+
+    <string name="insert_pwd_title">Crea la tua password</string>
+    <string name="insert_pwd_message">Deve essere composta da almeno otto caratteri, un numero, e una lettera maiuscola</string>
+    <string name="insert_pwd_hint">Inserisci nuova password</string>
+    <string name="confirm_pwd_hint">Conferma nuova password</string>
+
+    <string name="lbl_avanti">Avanti</string>
+
+    <string name="string_summary_message">Ti abbiamo inviato una email di conferma all\'indirizzo:</string>
+    <string name="lbl_chiudi">Chiudi</string>
+
+    <string name="string_summary_email_wrong">Email sbagliata?</string>
+    <string name="string_summary_restart">Ripeti la registrazione</string>
+    <string name="string_summary_footer_message">Apri la mail e clicca su Verifica la mia email entro 5 giorni.</string>
+    <string name="string_summary_footer_not_received">Non l\'hai ricevuta?</string>
+    <string name="string_summary_footer_resend">Invia nuova email</string>
+
+    <string name="msg_error_email">L\'indirizzo email inserito risulta già registrato e associato a un numero Dea.</string>
+    <string name="msg_error_msisdn">Il numero di telefono inserito risulta già associato a un indirizzo email.</string>
+
+    <string name="title_error_email">Indirizzo email già registrato</string>
+    <string name="title_error_msisdn">Numero di telefono già registrato</string>
+
+    <string name="error_button_email">Controlla l\'indirizzo email</string>
+    <string name="error_button_msisdn">Controlla il numero</string>
+
+</resources>

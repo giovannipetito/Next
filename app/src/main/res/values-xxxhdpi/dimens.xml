@@ -1,0 +1,182 @@
+<resources>
+
+    <!-- GENERAL -->
+    <dimen name="button_radius">5dp</dimen>
+    <dimen name="navigation_button_height">100dp</dimen>
+    <dimen name="navigation_button_horizontal_margin">4dp</dimen>
+    <dimen name="navigation_button_vertical_margin">10dp</dimen>
+    <dimen name="button_brand_textsize">20dp</dimen>
+    <dimen name="text_link_brand_textsize">12dp</dimen>
+    <dimen name="text_link_brand_textsize_regular">14dp</dimen>
+    <dimen name="app_guideline_margin">40dp</dimen>
+
+    <dimen name="splash_page_top">120dp</dimen>
+
+    <!-- FONTS -->
+    <dimen name="nunito_black_lineSpacingExtra">-8dp</dimen>
+    <dimen name="nunito_bold_lineSpacingExtra">-5dp</dimen>
+    <dimen name="nunito_extrabold_lineSpacingExtra">0dp</dimen>
+    <dimen name="nunito_semibold_lineSpacingExtra">-5dp</dimen>
+    <dimen name="nunito_regular_lineSpacingExtra">0dp</dimen>
+    <dimen name="nunito_light_lineSpacingExtra">0dp</dimen>
+
+    <!-- TOGGLE -->
+    <dimen name="toggle_stroke_width">1dp</dimen>
+    <dimen name="toggle_radius">4dp</dimen>
+
+    <!-- TOP BAR -->
+    <dimen name="top_bar_height">82dp</dimen>
+    <dimen name="top_bar_cta_side">56dp</dimen>
+    <dimen name="top_bar_title_text_size">18dp</dimen>
+
+    <!-- BOTTOM BAR -->
+    <dimen name="bottom_tabs_horizontal_margin">20dp</dimen>
+    <dimen name="bottom_navigation_height">64dp</dimen>
+    <dimen name="bottom_navigation_text_size">12dp</dimen>
+
+    <!-- MENU -->
+    <dimen name="menu_item_text_size">20dp</dimen>
+
+    <!-- DASHBOARD -->
+    <dimen name="dashboard_content_margin_top">200dp</dimen>
+    <dimen name="dashboard_cards_radius">15dp</dimen>
+    <dimen name="dashboard_horizontal_margins">30dp</dimen>
+    <dimen name="dashboard_bottom_margin">30dp</dimen>
+    <dimen name="dashboard_horizontal_buttons_space">12dp</dimen>
+    <dimen name="dashboard_pager_margin">12dp</dimen>
+    <dimen name="dashboard_pager_height">300dp</dimen>
+    <dimen name="dashboard_avatar_w_h">24dp</dimen>
+    <dimen name="dashboard_avatar_margin">12dp</dimen>
+    <dimen name="dashboard_pager_space">60dp</dimen>
+    <dimen name="dashboard_footer_element_margins">1dp</dimen>
+    <dimen name="text_image_button_space">4dp</dimen>
+    <dimen name="restart_button_margin">12dp</dimen>
+    <dimen name="footer_label_text_size">10dp</dimen>
+    <dimen name="tabs_horizontal_margin">80dp</dimen>
+
+    <!-- UserInfo -->
+    <dimen name="user_info_box_height">320dp</dimen>
+    <dimen name="user_info_username_h">48dp</dimen>
+    <dimen name="user_info_username_text_size">24dp</dimen>
+    <dimen name="user_info_section_text_size">14dp</dimen>
+    <dimen name="user_info_text_h">21dp</dimen>
+    <dimen name="user_info_space_h">1dp</dimen>
+    <dimen name="user_info_username_margin_top">24dp</dimen>
+    <dimen name="user_info_data_margin_top">20dp</dimen>
+    <dimen name="user_info_space_margin_top">8dp</dimen>
+    <dimen name="user_info_buttons_top_margin">40dp</dimen>
+    <dimen name="user_info_icon_dimen">24dp</dimen>
+
+    <!-- Detail Offer -->
+    <dimen name="detail_offer_data_text_size">16dp</dimen>
+    <dimen name="detail_offer_label_text_size">12dp</dimen>
+    <dimen name="detail_offer_label_text_min_size">2dp</dimen>
+    <dimen name="detail_offer_data_left_margin">10dp</dimen>
+    <dimen name="detail_offer_divider_margin">8dp</dimen>
+    <dimen name="detail_offer_top_margin">52dp</dimen>
+    <dimen name="detail_offer_price_top_margin">24dp</dimen>
+    <dimen name="detail_offer_price_big">52dp</dimen>
+    <dimen name="detail_offer_price_small">22dp</dimen>
+    <dimen name="detail_offer_price_subtext">18dp</dimen>
+    <dimen name="detail_renewal_margin_top">32dp</dimen>
+    <dimen name="detail_renewal_text_size">14dp</dimen>
+    <dimen name="detail_buttons_top_margin">56dp</dimen>
+    <dimen name="detail_buttons_top_margin_no_content">8dp</dimen>
+    <dimen name="detail_buttons_bottom_margin">40dp</dimen>
+
+    <!-- CREDIT -->
+    <dimen name="credit_item_label_size">16dp</dimen>
+    <dimen name="credit_item_date_size">12dp</dimen>
+    <dimen name="credit_item_amount_size">16dp</dimen>
+
+    <!-- TOP UP -->
+    <!-- TOP UP Home -->
+    <dimen name="home_top_up_number_margin_top">32dp</dimen>
+
+    <!-- Payment Methods TOP UP -->
+    <dimen name="payment_methods_toggle_width">280dp</dimen>
+    <dimen name="payment_methods_toggle_height">102dp</dimen>
+    <dimen name="payment_methods_name_text">14dp</dimen>
+    <dimen name="payment_methods_margins">16dp</dimen>
+    <dimen name="payment_methods_image_w">34dp</dimen>
+    <dimen name="payment_methods_image_h">24dp</dimen>
+    <dimen name="payment_methods_image_margin">6dp</dimen>
+    <dimen name="payment_methods_toggle_margins">16dp</dimen>
+    <dimen name="payment_methods_button_margin_bottom">40dp</dimen>
+
+    <!-- TOPUP Dialog -->
+    <dimen name="topup_dialog_switch_w">36dp</dimen>
+    <dimen name="topup_dialog_switch_h">4dp</dimen>
+    <dimen name="topup_dialog_switch_margin">8dp</dimen>
+    <dimen name="topup_dialog_section_title_textsize">18dp</dimen>
+    <dimen name="topup_dialog_section_title_margin_top">88dp</dimen>
+    <dimen name="topup_dialog_section_text_textsize">14dp</dimen>
+    <dimen name="topup_dialog_section_elements_vertical_margin">22dp</dimen>
+    <dimen name="topup_dialog_button_margin">28dp</dimen>
+    <dimen name="topup_dialog_icon_dim">24dp</dimen>
+    <dimen name="topup_dialog_icon_margin_top">32dp</dimen>
+    <dimen name="topup_dialog_payment_margin_start">16dp</dimen>
+    <dimen name="topup_dialog_payment_font_size">12dp</dimen>
+    <dimen name="topup_dialog_payment_row_height">80dp</dimen>
+    <dimen name="topup_dialog_payment_row_padding">4dp</dimen>
+
+    <!-- Save Payment Dialog -->
+    <dimen name="save_payment_dialog_section_margin">28dp</dimen>
+    <dimen name="save_payment_dialog_buttons_margin">16dp</dimen>
+    <dimen name="save_payment_dialog_buttons_height">48dp</dimen>
+
+    <!-- Sender Request -->
+    <dimen name="sender_request_title_textsize">24dp</dimen>
+    <dimen name="sender_request_text_textsize">20dp</dimen>
+    <dimen name="sender_request_text_margin">40dp</dimen>
+    <dimen name="sender_request_vertical_margin">8dp</dimen>
+
+    <!-- Topup Error page -->
+    <dimen name="topup_error_page_elements_vertical_margin">16dp</dimen>
+    <dimen name="topup_error_page_button_vertical_margin">32dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_buttons_font_size">16dp</dimen>
+    <dimen name="login_title_font_size">32dp</dimen>
+    <dimen name="login_username_margin_top">24dp</dimen>
+    <dimen name="login_password_margin_top">60dp</dimen>
+    <dimen name="login_button_margin_top">32dp</dimen>
+    <dimen name="login_forgot_margin_top">24dp</dimen>
+    <dimen name="login_texts_font_size">14dp</dimen>
+    <dimen name="login_register_label_margin_top">52dp</dimen>
+
+    <dimen name="login_error_section_title_textsize">18dp</dimen>
+    <dimen name="login_error_section_title_margin_top">24dp</dimen>
+    <dimen name="login_error_section_text_textsize">14dp</dimen>
+    <dimen name="login_error_button_margin_top">72dp</dimen>
+    <dimen name="login_error_section_elements_vertical_margin">22dp</dimen>
+    <dimen name="login_error_button_margin">48dp</dimen>
+
+    <!-- Login Mail not verified -->
+    <dimen name="mail_not_verified_margin_top">40dp</dimen>
+    <dimen name="mail_not_verified_message_textsize">16dp</dimen>
+    <dimen name="mail_not_verified_elements_textsize">14dp</dimen>
+    <dimen name="mail_not_verified_mail_padding">4dp</dimen>
+    <dimen name="mail_not_verified_close_margin_top">96dp</dimen>
+
+    <!-- recovery Credentials -->
+    <dimen name="recovery_credentials_title_textsize">18dp</dimen>
+    <dimen name="recovery_credentials_message_textsize">16dp</dimen>
+    <dimen name="recovery_credentials_margin_top">40dp</dimen>
+    <dimen name="recovery_credentials_buttons_margin_top">32dp</dimen>
+
+    <!-- recovery -->
+    <dimen name="recovery_title_textsize">18dp</dimen>
+    <dimen name="recovery_message_textsize">16dp</dimen>
+    <dimen name="recovery_margin_top">40dp</dimen>
+    <dimen name="recovery_button_font_size">16dp</dimen>
+    <dimen name="recovery_button_margin_bottom">40dp</dimen>
+
+    <dimen name="padding_insert_msisdn_top_1">60dp</dimen>
+    <dimen name="padding_insert_msisdn_top_2">25dp</dimen>
+    <dimen name="padding_insert_msisdn_top_3">100dp</dimen>
+
+    <dimen name="txt_error_size">18dp</dimen>
+    <dimen name="txt_floating_size">16dp</dimen>
+
+</resources>

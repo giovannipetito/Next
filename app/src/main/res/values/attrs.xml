@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationButton">
+        <attr name="iconRes" format="integer" />
+        <attr name="textRes" format="integer" />
+        <attr name="showBadge" format="boolean" />
+    </declare-styleable>
+</resources>

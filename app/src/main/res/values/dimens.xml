@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gauge_default_inner_radius_ratio" format="float" type="raw">2.7</dimen>
+    <dimen name="gauge_default_thickness_ratio" format="float" type="raw">8.5</dimen>
+</resources>

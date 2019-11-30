@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/background">
+        <shape
+            android:innerRadiusRatio="@dimen/gauge_default_inner_radius_ratio"
+            android:shape="ring"
+            android:thicknessRatio="@dimen/gauge_default_thickness_ratio"
+            android:useLevel="false">
+            <solid android:color="#f9f9f9"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <shape
+            android:innerRadiusRatio="@dimen/gauge_default_inner_radius_ratio"
+            android:shape="ring"
+            android:thicknessRatio="@dimen/gauge_default_thickness_ratio"
+            android:useLevel="true">
+
+            <solid android:color="#e5edee"/>
+            <!--<solid android:color="@android:color/black"/>-->
+        </shape>
+    </item>
+
+    <item android:id="@+id/progress">
+        <shape
+            android:innerRadiusRatio="@dimen/gauge_default_inner_radius_ratio"
+            android:shape="ring"
+            android:thicknessRatio="@dimen/gauge_default_thickness_ratio"
+            android:useLevel="true">
+
+            <solid android:color="#00623a"/>
+        </shape>
+    </item>
+</layer-list>

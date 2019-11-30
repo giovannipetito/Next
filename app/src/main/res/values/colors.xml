@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#13a538</color>
+    <color name="colorPrimaryDark">#16E99F</color>
+    <color name="colorPrimaryDarker">#1EAC7A</color>
+    <color name="colorAccent">#16E99F</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="generic_text_color">#161925</color>
+    <color name="generic_icon_tint">#161925</color>
+
+    <color name="button_second_color">#C94F92</color>
+
+    <color name="login_generic_textcolor">#49545C</color>
+
+    <color name="error_color">#E9003C</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="space_color">#dddddd</color>
+    <color name="separator_color">#999999</color>
+    <color name="dashboard_background_grey">#aaaaaa</color>
+    <color name="pager_placeholder">#FF0000</color>
+
+    <color name="disabled_button_text_color">#E5EDEE</color>
+
+    <!-- TEXT INPUT LAYOUT -->
+    <color name="text_input_box_color">#95989A</color>
+    <color name="text_input_box_color_active">#505050</color>
+    <color name="edit_text_color">#161925</color>
+    <color name="hint_color">#95989A</color>
+
+
+    <!-- Text threshold Colors -->
+    <color name="threshold_normal">#000000</color>
+    <color name="threshold_alarm">#bc4a89</color>
+
+    <color name="light_gray">#aaaaaa</color>
+    <color name="dark_gray">#999999</color>
+
+    <color name="badge_icon_color">#CFB412</color>
+
+    <!-- BOTTOM BAR -->
+    <color name="bottom_text_color">#161925</color>
+    <color name="bottom_navigation_background">#F9F9F9</color>
+
+    <!-- PROFILE -->
+    <color name="user_info_box_background">#F9F9F9</color>
+    <color name="user_info_text_color">#747881</color>
+    <color name="user_info_text_color_dark">#161925</color>
+    <color name="user_info_space_color">#E5EDEE</color>
+
+    <!-- DETAILS -->
+    <color name="detail_data_color">#49545C</color>
+    <color name="detail_data_label_color">#747881</color>
+    <color name="detail_data_divider_color">#E5EDEE</color>
+    <color name="dashboard_label_color">#6f6f6e</color>
+
+    <!-- TOP UP -->
+    <color name="home_top_up_line">#161925</color>
+    <color name="bar_topup_color">#e5edee</color>
+
+    <!-- PAYMENT METHODS TOP UP -->
+    <color name="payment_method_name_color">#747881</color>
+
+    <!-- switch line widget -->
+    <color name="switchLinesCardColor">#49545C</color>
+
+    <color name="grey_underline">#505050</color>
+
+    <!-- buttons -->
+    <color name="button_brand_darker">#00623A</color>
+    <color name="button_brand_darker_dark">#00522A</color>
+
+    <!-- Mail not verified -->
+    <color name="mail_not_verified_mail_background">#F9F9F9</color>
+
+</resources>
