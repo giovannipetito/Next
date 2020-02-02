@@ -29,8 +29,8 @@
             app:exitAnim="@anim/slide_out_left" />
 
         <action
-            android:id="@+id/action_mainFragment_to_viewBalanceFragment"
-            app:destination="@id/viewBalanceFragment"
+            android:id="@+id/action_mainFragment_to_titleScreenFragment"
+            app:destination="@id/title_screen"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_right"
@@ -44,13 +44,6 @@
         android:name="it.giovanni.next.ViewTransactionFragment"
         android:label="fragment_view_transaction"
         tools:layout="@layout/fragment_view_transaction" />
-
-    <!-- ViewBalanceFragment -->
-    <fragment
-        android:id="@+id/viewBalanceFragment"
-        android:name="it.giovanni.next.ViewBalanceFragment"
-        android:label="fragment_view_balance"
-        tools:layout="@layout/fragment_view_balance" />
 
     <!-- ChooseRecipientFragment -->
     <fragment
@@ -102,6 +95,122 @@
         <argument android:name="amount"
             app:argType="it.giovanni.next.Money"/>
 
+    </fragment>
+
+    <!-- DEEPLINK -->
+    <fragment
+        android:id="@+id/title_screen"
+        android:name="it.giovanni.next.trivia.TitleScreenFragment"
+        android:label="fragment_title_screen"
+        tools:layout="@layout/fragment_title_screen">
+        <action
+            android:id="@+id/action_title_screen_to_register"
+            app:destination="@id/register"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_title_screen_to_leaderboard"
+            app:destination="@id/leaderboard"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="it.giovanni.next.trivia.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_match"
+            app:destination="@id/match"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="it.giovanni.next.trivia.LeaderboardFragment"
+        android:label="fragment_leaderboard"
+        tools:layout="@layout/fragment_leaderboard">
+        <action
+            android:id="@+id/action_leaderboard_to_userProfile"
+            app:destination="@id/user_profile"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/match"
+        android:name="it.giovanni.next.trivia.MatchFragment"
+        android:label="fragment_match"
+        tools:layout="@layout/fragment_match">
+        <action
+            android:id="@+id/action_match_to_in_game"
+            app:destination="@id/in_game"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/user_profile"
+        android:name="it.giovanni.next.trivia.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile">
+        <argument android:name="userName"
+            android:defaultValue="name"/>
+        <deepLink app:uri="www.trivia.com/user/gio" />
+    </fragment>
+    <fragment
+        android:id="@+id/in_game"
+        android:name="it.giovanni.next.trivia.InGameFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_in_game">
+        <action
+            android:id="@+id/action_in_game_to_resultsWinner"
+            app:destination="@id/results_winner"
+            app:popUpTo="@+id/match"
+            app:popUpToInclusive="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_in_game_to_gameOver"
+            app:destination="@id/game_over"
+            app:popUpTo="@id/match"
+            app:popUpToInclusive="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/results_winner"
+        android:name="it.giovanni.next.trivia.ResultsWinnerFragment"
+        tools:layout="@layout/fragment_results_winner">
+        <action android:id="@+id/action_results_winner_to_leaderboard"
+            app:destination="@id/leaderboard"
+            app:popUpTo="@id/title_screen"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_results_winner_to_match"
+            app:popUpTo="@id/match"/>
+    </fragment>
+    <fragment
+        android:id="@+id/game_over"
+        android:name="it.giovanni.next.trivia.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over">
+        <action android:id="@+id/action_game_over_to_match"
+            app:popUpTo="@id/match"/>
     </fragment>
 
 </navigation>
