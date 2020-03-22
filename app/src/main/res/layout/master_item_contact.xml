@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="contact"
+            type="it.giovanni.next.rubrica.db.Contact" />
+
+        <variable
+            name="presenter"
+            type="it.giovanni.next.rubrica.view.master.MasterPresenter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_half"
+        android:paddingBottom="@dimen/margin_half"
+        app:onItemClicked="@{contact}"
+        app:onPresenter="@{presenter}">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_standard" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/side_image"
+            android:layout_height="@dimen/side_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/entry"
+            android:tint="@color/textColorPrimary"
+            app:layout_constraintStart_toEndOf="@id/v1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:ellipsize="end"
+            android:fontFamily="@font/normal"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_size_16"
+            app:itemFullName="@{contact}"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/dummy_full_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:ellipsize="end"
+            android:fontFamily="@font/bold"
+            android:gravity="start|center_vertical"
+            android:lines="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/full_name"
+            app:itemPhoneNumber="@{contact}"
+            tools:text="@string/dummy_phone_number" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

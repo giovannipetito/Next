@@ -40,4 +40,26 @@
     <string name="losses_amount">03</string>
     <string name="congratulations">Congratulations!</string>
 
+    <!-- Rubrica -->
+    <string name="action_add">Add</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_import">Import</string>
+    <string name="action_edit">Edit</string>
+
+    <string name="hint_filter">Filter</string>
+    <string name="hint_first">First name*</string>
+    <string name="hint_last">Last name*</string>
+    <string name="hint_phone">Phone number*</string>
+
+    <string name="err_field_empty">Empty field</string>
+    <string name="err_field_malformed">Malformed field</string>
+
+    <string name="dummy_first_name">Sir</string>
+    <string name="dummy_last_name">Talkalot</string>
+    <string name="dummy_full_name">Sir Talkalot</string>
+    <string name="dummy_phone_number">+12 34 567890</string>
+
+    <string name="no_data_icon_text">&#x007e;</string>
+    <string name="no_data_caption_text">You\'ve not added a contact yet.\nPress the button below to insert one!</string>
+
 </resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="it.giovanni.next.rubrica.view.detail.DetailPresenter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_standard" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_first"
+            style="@style/TextInputLayoutTheme"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_editable_field"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintStart_toEndOf="@id/v1"
+            app:layout_constraintTop_toBottomOf="@id/h1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/normal"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_first"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:textColor="@color/textColorPrimary"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="@dimen/text_size_16"
+                app:firstNameValidator="@{presenter}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_last"
+            style="@style/TextInputLayoutTheme"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_editable_field"
+            android:layout_marginTop="@dimen/margin_half"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintStart_toEndOf="@id/v1"
+            app:layout_constraintTop_toBottomOf="@id/input_first">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_last"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/normal"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_last"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:textColor="@color/textColorPrimary"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="@dimen/text_size_16"
+                app:lastNameValidator="@{presenter}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_phone"
+            style="@style/TextInputLayoutTheme"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_editable_field"
+            android:layout_marginTop="@dimen/margin_half"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintStart_toEndOf="@id/v1"
+            app:layout_constraintTop_toBottomOf="@id/input_last">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/normal"
+                android:gravity="start|center_vertical"
+                android:hint="@string/hint_phone"
+                android:imeOptions="actionDone"
+                android:inputType="number|phone"
+                android:lines="1"
+                android:textColor="@color/textColorPrimary"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="@dimen/text_size_16"
+                app:phoneNumberValidator="@{presenter}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/action_primary"
+            style="@style/MaterialButtonContained"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            app:layout_constraintBottom_toTopOf="@id/h2"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:layout_constraintTop_toBottomOf="@id/input_phone"
+            app:onPrimaryAction="@{presenter}" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/action_secondary"
+            style="@style/MaterialButtonOutlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:text="@string/action_import"
+            app:layout_constraintBottom_toTopOf="@id/h2"
+            app:layout_constraintEnd_toStartOf="@id/action_primary"
+            app:layout_constraintTop_toBottomOf="@id/input_phone"
+            app:onSecondaryAction="@{presenter}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

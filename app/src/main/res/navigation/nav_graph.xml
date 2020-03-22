@@ -36,6 +36,14 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
 
+        <action
+            android:id="@+id/action_mainFragment_to_showListFragment"
+            app:destination="@id/fragment_list_show"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
     </fragment>
 
     <!-- ViewTransactionFragment -->
@@ -212,5 +220,72 @@
         <action android:id="@+id/action_game_over_to_match"
             app:popUpTo="@id/match"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/fragment_list_show"
+        android:name="it.giovanni.next.rubrica.view.master.MasterFragment"
+        android:label="MasterFragment"
+        tools:layout="@layout/master_fragment">
+        <argument
+            android:name="mode"
+            android:defaultValue="ROOM"
+            app:argType="it.giovanni.next.rubrica.data.MasterFragmentMode" />
+        <action
+            android:id="@+id/to_add_entry"
+            app:destination="@id/fragment_detail_add" />
+        <action
+            android:id="@+id/to_show_entry"
+            app:destination="@id/fragment_detail_show" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/fragment_detail_show"
+        android:name="it.giovanni.next.rubrica.view.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="mode"
+            android:defaultValue="SHOW_CONTACT"
+            app:argType="it.giovanni.next.rubrica.data.DetailFragmentMode" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/fragment_detail_add"
+        android:name="it.giovanni.next.rubrica.view.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="mode"
+            android:defaultValue="ADD_CONTACT"
+            app:argType="it.giovanni.next.rubrica.data.DetailFragmentMode" />
+        <action
+            android:id="@+id/to_import_entry"
+            app:destination="@id/fragment_list_import" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/fragment_list_import"
+        android:name="it.giovanni.next.rubrica.view.master.MasterFragment"
+        android:label="MasterFragment"
+        tools:layout="@layout/master_fragment">
+        <argument
+            android:name="mode"
+            android:defaultValue="ADDRESS_BOOK"
+            app:argType="it.giovanni.next.rubrica.data.MasterFragmentMode" />
+        <action
+            android:id="@+id/to_edit_entry"
+            app:destination="@id/fragment_detail_edit" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/fragment_detail_edit"
+        android:name="it.giovanni.next.rubrica.view.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="mode"
+            android:defaultValue="EDIT_CONTACT"
+            app:argType="it.giovanni.next.rubrica.data.DetailFragmentMode" />
+    </dialog>
 
 </navigation>

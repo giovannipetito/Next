@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
     package="it.giovanni.next">
 
+    <dist:module dist:instant="true" />
+
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
+        android:name=".rubrica.core.App"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:label="@string/app_name"
         android:icon="@mipmap/next"
         android:roundIcon="@mipmap/next"
@@ -17,12 +23,13 @@
         android:resizeableActivity="false"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleInstance">
+            android:screenOrientation="fullSensor"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <nav-graph android:value="@navigation/nav_graph" />

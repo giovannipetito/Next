@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="it.giovanni.next.rubrica.view.master.MasterPresenter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_standard" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_standard" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/side_image"
+            android:layout_height="@dimen/height_top_bar"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"
+            android:tint="@color/textColorPrimary"
+            app:layout_constraintStart_toEndOf="@id/v1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/top_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_top_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/back"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/title_bar"
+                layout="@layout/widget_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/search_bar"
+                layout="@layout/widget_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider_middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/margin_standard"
+            android:paddingBottom="@dimen/height_bottom_window_extra_space"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/no_data_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".4"
+            android:clipToPadding="false"
+            android:fontFamily="@font/icons"
+            android:gravity="center"
+            android:text="@string/no_data_icon_text"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_size_128"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/h3"
+            app:layout_constraintEnd_toEndOf="@id/v1"
+            app:layout_constraintStart_toStartOf="@id/v2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/no_data_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal"
+            android:gravity="center"
+            android:text="@string/no_data_caption_text"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/v1"
+            app:layout_constraintStart_toStartOf="@id/v2"
+            app:layout_constraintTop_toBottomOf="@id/h3" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/action_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/action_add"
+            android:textAllCaps="true"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="@dimen/text_size_14"
+            app:icon="@drawable/add"
+            app:iconTint="@color/navigationBarColor"
+            app:layout_constraintBottom_toTopOf="@id/h2"
+            app:layout_constraintEnd_toStartOf="@id/v2"
+            app:onPrimaryAction="@{presenter}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

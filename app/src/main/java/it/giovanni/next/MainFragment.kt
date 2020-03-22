@@ -11,10 +11,9 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment(), View.OnClickListener {
 
-    lateinit var navController: NavController
+    private lateinit var navController: NavController
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
@@ -26,13 +25,15 @@ class MainFragment : Fragment(), View.OnClickListener {
         view_transactions_btn.setOnClickListener(this)
         send_money_btn.setOnClickListener(this)
         trivia_btn.setOnClickListener(this)
+        rubrica_btn.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-        when(v!!.id) {
+        when (v!!.id) {
             R.id.view_transactions_btn -> navController.navigate(R.id.action_mainFragment_to_viewTransactionFragment)
             R.id.send_money_btn -> navController.navigate(R.id.action_mainFragment_to_chooseRecipientFragment)
             R.id.trivia_btn -> navController.navigate(R.id.action_mainFragment_to_titleScreenFragment)
+            R.id.rubrica_btn -> navController.navigate(R.id.action_mainFragment_to_showListFragment)
         }
     }
 }

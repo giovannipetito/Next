@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/divider_middle"
+        android:right="@dimen/divider_middle">
+        <shape android:shape="rectangle">
+            <size android:height="2dp" />
+            <corners android:radius="1dp" />
+            <solid android:color="@color/dividersColor" />
+        </shape>
+    </item>
+</layer-list>

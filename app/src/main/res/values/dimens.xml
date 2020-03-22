@@ -2,4 +2,25 @@
 <resources>
     <dimen name="gauge_default_inner_radius_ratio" format="float" type="raw">2.7</dimen>
     <dimen name="gauge_default_thickness_ratio" format="float" type="raw">8.5</dimen>
+
+    <!-- Rubrica -->
+    <dimen name="height_top_bar">100dp</dimen>
+    <dimen name="height_detail_field">48dp</dimen>
+    <dimen name="height_editable_field">64dp</dimen>
+    <dimen name="height_bottom_window_extra_space">80dp</dimen>
+
+    <dimen name="side_image">40dp</dimen>
+
+    <dimen name="margin_standard">24dp</dimen>
+    <dimen name="margin_half">12dp</dimen>
+
+    <dimen name="divider_middle">24dp</dimen>
+    <dimen name="divider_inset_start">88dp</dimen>
+    <dimen name="divider_inset_end">0dp</dimen>
+
+    <dimen name="text_size_128">80sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+
 </resources>

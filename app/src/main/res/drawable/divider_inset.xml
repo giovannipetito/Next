@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/divider_inset_start"
+        android:right="@dimen/divider_inset_end">
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <corners
+                android:bottomLeftRadius="0.5dp"
+                android:topLeftRadius="0.5dp" />
+            <solid android:color="@color/dividersColor" />
+        </shape>
+    </item>
+</layer-list>

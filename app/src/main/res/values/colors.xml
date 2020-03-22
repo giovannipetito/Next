@@ -75,4 +75,11 @@
     <!-- Mail not verified -->
     <color name="mail_not_verified_mail_background">#F9F9F9</color>
 
+    <!-- Rubrica -->
+    <color name="navigationBarColor">#ffffff</color>
+    <color name="textColorPrimary">#2b2b2b</color>
+    <color name="textColorSecondary">#5b5979</color>
+    <color name="windowBackground">#ffffff</color>
+    <color name="dividersColor">#e2ecef</color>
+
 </resources>

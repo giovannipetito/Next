@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -35,7 +35,7 @@
     <style name="ButtonBrand" parent="ButtonBase">
         <item name="backgroundTint">@color/colorPrimary</item>
         <item name="rippleColor">@color/colorPrimaryDarker</item>
-        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
         <item name="android:textSize">@dimen/button_brand_textsize</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_extrabold_lineSpacingExtra</item>
@@ -44,7 +44,7 @@
     <style name="ButtonBrandDark" parent="ButtonBase">
         <item name="backgroundTint">@color/button_brand_darker</item>
         <item name="rippleColor">@color/button_brand_darker_dark</item>
-        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
         <item name="android:textSize">@dimen/button_brand_textsize</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@android:color/white</item>
@@ -59,7 +59,7 @@
     <style name="ButtonBrandWhite" parent="ButtonBase">
         <item name="backgroundTint">@android:color/white</item>
         <item name="rippleColor">@color/colorPrimaryDarker</item>
-        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
         <item name="android:textSize">@dimen/button_brand_textsize</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textAllCaps">false</item>
@@ -75,7 +75,7 @@
     <style name="ButtonBrandLink" parent="ButtonBase">
         <item name="backgroundTint">@android:color/transparent</item>
         <item name="rippleColor">@android:color/transparent</item>
-        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
         <item name="android:textSize">@dimen/button_brand_textsize</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -83,7 +83,7 @@
     </style>
 
     <style name="TextBrandLink" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
         <item name="android:textSize">@dimen/text_link_brand_textsize</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -91,7 +91,7 @@
     </style>
 
     <style name="TextBrandLinkRegular" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="android:textSize">@dimen/text_link_brand_textsize_regular</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/colorPrimary</item>
@@ -125,32 +125,32 @@
     </style>
 
     <style name="NunitoBlack" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_black</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_black_lineSpacingExtra</item>
     </style>
 
     <style name="NunitoBold" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_bold_lineSpacingExtra</item>
     </style>
 
     <style name="NunitoExtraBold" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_extrabold_lineSpacingExtra</item>
     </style>
 
     <style name="NunitoSemiBold" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_semibold_lineSpacingExtra</item>
     </style>
 
     <style name="NunitoRegular" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_regular_lineSpacingExtra</item>
     </style>
 
     <style name="NunitoLight" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/nunito_sans_light</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_light_lineSpacingExtra</item>
     </style>
 
@@ -205,7 +205,7 @@
         <item name="hintTextColor">@color/hint_color</item>
         <item name="android:textColorHint">@color/hint_color</item>
         <item name="boxStrokeColor">@color/textinputlayout_box</item>
-        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_regular_lineSpacingExtra</item>
         <item name="errorTextColor">@color/error_color</item>
         <item name="errorIconTint">@color/error_color</item>
@@ -215,7 +215,7 @@
     <style name="BrandEditTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="android:textColor">@color/edit_text_color</item>
         <item name="android:textCursorDrawable">@color/edit_text_color</item>
-        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
         <item name="android:lineSpacingExtra">@dimen/nunito_regular_lineSpacingExtra</item>
         <item name="android:paddingStart">0dp</item>
     </style>
@@ -224,6 +224,73 @@
         <item name="android:textColor">@color/edit_text_color</item>
         <item name="android:textCursorDrawable">@color/edit_text_color</item>
         <item name="useMaterialThemeColors">true</item>
+    </style>
+
+    <!-- Rubrica -->
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light.NoActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.MaterialComponents.Light.NoActionBar" />
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/navigationBarColor</item>
+        <item name="colorPrimaryDark">@color/navigationBarColor</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:statusBarColor" tools:targetApi="23">@color/navigationBarColor</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogFragmentTheme</item>
+    </style>
+
+    <style name="BottomSheetDialogFragmentTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="colorPrimary">@color/textColorPrimary</item>
+        <item name="colorPrimaryDark">@color/textColorPrimary</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+        <item name="bottomSheetStyle">@style/ModalSheetTheme</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <style name="ModalSheetTheme" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_sheet_dialog</item>
+    </style>
+
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <style name="MaterialButtonContained" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/navigationBarColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="MaterialButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="strokeWidth">1dp</item>
     </style>
 
 </resources>
