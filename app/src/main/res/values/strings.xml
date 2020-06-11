@@ -2,6 +2,13 @@
 
     <string name="app_name">Next</string>
 
+    <!-- Buttons -->
+    <string name="view_transactions_label">View transactions</string>
+    <string name="send_money_label">Send money</string>
+    <string name="trivia_label">Trivia</string>
+    <string name="rubrica_label">Rubrica</string>
+    <string name="egg_timer_label">Egg Timer</string>
+
     <!-- Navigation Bar-->
     <string name="home_nav_label">Home</string>
     <string name="line_nav_label">Offerta</string>
@@ -61,5 +68,24 @@
 
     <string name="no_data_icon_text">&#x007e;</string>
     <string name="no_data_caption_text">You\'ve not added a contact yet.\nPress the button below to insert one!</string>
+
+    <!-- Egg Timer -->
+    <string name="egg_prompt">How do you like your egg?</string>
+    <string name="timer_on">Start</string>
+    <string name="timer_off">Stop</string>
+    <string name="notification_title">Egg Timer</string>
+    <string name="notification_text">Your egg is ready!!</string>
+
+    <string name="fcm_message">FCM Message</string>
+    <string name="message_subscribe_failed">Failed to subscribe to topic</string>
+    <string name="message_subscribed">Subscribed to topic</string>
+    <string name="egg_notification_channel_id" translatable="false">egg_channel</string>
+    <string name="egg_notification_channel_name" translatable="true">Egg</string>
+    <string name="breakfast_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="breakfast_notification_channel_name" translatable="true">Breakfast</string>
+    <string name="eggs_ready">It is time! Bon appetit!</string>
+    <string name="timer_running">Egg timer is running…</string>
+    <string name="breakfast_notification_channel_description">Breakfast reminder</string>
+    <string name="snooze">Snooze</string>
 
 </resources>

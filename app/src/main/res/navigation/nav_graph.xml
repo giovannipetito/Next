@@ -44,6 +44,14 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left" />
 
+        <action
+            android:id="@+id/action_mainFragment_to_eggTimerFragment"
+            app:destination="@id/fragment_egg_timer"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
     </fragment>
 
     <!-- ViewTransactionFragment -->
@@ -287,5 +295,11 @@
             android:defaultValue="EDIT_CONTACT"
             app:argType="it.giovanni.next.rubrica.data.DetailFragmentMode" />
     </dialog>
+
+    <fragment
+        android:id="@+id/fragment_egg_timer"
+        android:name="it.giovanni.next.eggtimer.ui.EggTimerFragment"
+        android:label="EggTimerFragment"
+        tools:layout="@layout/fragment_egg_timer" />
 
 </navigation>
