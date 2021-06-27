@@ -44,7 +44,9 @@ fun Fragment.goto(where: Int) {
 }
 
 fun Fragment.back() {
-    findNavController().popBackStack()
+    activity?.runOnUiThread {
+        findNavController().popBackStack()
+    }
 }
 
 fun <T> LiveData<T>.observeOnce(onChangeHandler: (T) -> Unit) {
